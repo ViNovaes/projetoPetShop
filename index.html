@@ -12,28 +12,33 @@
 <body>
     
 
-<header>
-    <figcaption><img src="imgs/logo-Marca.png" alt="Logo com uma pata de cachorro e escrito PéZada"></figcaption>
-    <nav>
-        <ul>
-            <li><a href="#">Cachorro</a></li>
-            <li><a href="#">Gatos</a></li>
-            <li><a href="#">Pàssaros</a></li>
-            <li><a href="#">Peixes</a></li>
-            <li><a href="#">Outros</a></li>
-        </ul>
-        <div class="menu-icon">
-            <i class="fa-solid fa-user"></i>
-            <i class="fa-solid fa-heart"></i>
-            <i class="fa-solid fa-cart-shopping"></i>
+    <header>
+        <div class="container">
+            <figcaption class="logo">
+                <img src="imgs/logo-Marca.png" class="img">
+            </figcaption>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <a href="#"><li>Cachorros</li></a>
+                        <a href="#"><li>Gatos</li></a>
+                        <a href="#"><li>Pássaros</li></a>
+                        <a href="#"><li>Peixes</li></a>
+                        <a href="#"><li>Outros</li></a>
+                    </ul>
+                </nav>
+                <div id="divBusca">
+                    <input type="text" id="txtBusca" placeholder="Buscar..."/>
+                    <img src="imgs/lupa.png" id="btnBusca" alt="Buscar"/>
+                </div>
+            </div>
+            <div class="menu-icon">
+                <a href=""><i class="fa-solid fa-user"></i></a>
+                <a href=""><i class="fa-solid fa-heart"></i></a>
+                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
         </div>
-    </nav>
-</header>
-
-<div id="divBusca">
-    <input type="text" id="txtBusca" placeholder="Buscar..."/>
-    <img src="imgs/lupa.png" id="btnBusca" alt="Buscar"/>
-</div>
+    </header>
 
 <main>
 <!-- carrossel -->
@@ -42,16 +47,20 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="..." class="d-block w-100" alt="...">
+                <img src="imgs/carrossel1.png" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
+                <img src="imgs/carrossel2.png" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
+                <img src="imgs/carrossel3.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="imgs/carrossel4.png" class="d-block w-100" alt="...">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
@@ -65,12 +74,64 @@
     </div>
 
     <!-- Aqui é para colocar os produtos -->
-    <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+
+    <p>Cachorros</p>
+
+    <div id="conteudo-racao">
+        <div class="card" style="width: 18rem;">
+            <img src="imgs/goldenFilhote.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="imgs/goldenFormula.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="imgs/pedrigreeNatural.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="imgs/prohealth.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+
+        
+        <div class="card" style="width: 18rem;">
+            <img src="imgs/maxVita.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+
+        
+        <div class="card" style="width: 18rem;">
+            <img src="" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
         </div>
     </div>
 </main>
