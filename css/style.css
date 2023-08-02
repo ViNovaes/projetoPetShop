@@ -63,6 +63,7 @@ nav a {
 nav .active, nav a:hover{
     text-decoration: none;
     color: #0042a5;
+    background-color: aliceblue;
 }
 
 
